@@ -1,0 +1,131 @@
+.title {
+    text-align: center;
+    font-family: Arial;
+    color: #000000;
+}
+
+.container {
+    margin: auto;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.27);
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 600px;
+    /* height:100px; */
+    background-color: rgb(234, 234, 234);
+    padding: 10px 20px;
+    /* Esto es un comentario en CSS ;) */
+    overflow: hidden;
+    /* Para el texto */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container:hover {
+    max-height: 300px;
+    overflow: auto;
+    white-space: normal;
+
+}
+
+.box-px {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    width: 100px;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.box-in {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: teal;
+    width: 2in;
+}
+
+.box-cm {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: beige;
+    width: 2.54cm;
+}
+
+.box-mm {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: coral;
+    width: 25.4mm;
+}
+
+.box-pt {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: blueviolet;
+    width: 50pt;
+}
+
+.box-pc {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: yellow;
+    width: 25pc;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-size: 20px;
+}
+
+.box-em {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: gold;
+    width: 10em;
+}
+
+.box-rem {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: greenyellow;
+    width: 10rem;
+}
+
+body {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.box-per {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: greenyellow;
+    width: 90%;
+}
+
+.box-vh {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: green;
+    width: 100%;
+    height: 10vh;
+}
+
+.box-vw {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    overflow: hidden;
+    background-color: pink;
+    width: 90vw;
+}
