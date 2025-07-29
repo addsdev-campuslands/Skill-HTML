@@ -2,6 +2,7 @@
     --text-color: #303030;
     --text-color-light: #FFFFFF;
     --background-color: #F7F7F7;
+    --text-color-yellow: #FFDD81;
     --background-color-dark: #303030;
     --background-color-yellow: #FFDD81;
     --background-color-light: #FFFFFF;
@@ -44,6 +45,17 @@ h3 span {
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--text-color);
 }
 
 /* ========Titulos & Labels======= */
@@ -147,7 +159,7 @@ h3 span {
 }
 
 .hero-text h1 {
-    font-size:2.8rem;
+    font-size: 2.8rem;
     font-family: var(--font-heading);
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -208,10 +220,12 @@ h3 span {
     top: 50px;
     right: -30px;
 }
+
 .bottom-left {
     bottom: 20px;
     left: -50px;
 }
+
 .bottom-center {
     bottom: 100px;
     left: 20%;
@@ -239,4 +253,154 @@ h3 span {
     top: -65px;
     left: -85px;
     width: 130px;
+}
+
+/* ========Hero Stat======= */
+
+.hero-stat {
+    margin-top: 4rem;
+    border: 1px solid var(--border-color-dark);
+    border-radius: 30px;
+}
+
+.stat-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 40px 10px 40px;
+    gap: 60px;
+}
+
+.stat h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    font-size: 0.9rem;
+    max-width: 180px;
+}
+
+
+/* ========What is Alliatus======= */
+.what-is {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.section-subtitle {
+    color: var(--text-color-yellow);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-family: var(--font-heading);
+    line-height: 1.8;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.steps-image {
+    /* Terminar :-) */
+    background-color: var(--background-color);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color-light);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.step-card-invert {
+    background-color: var(--background-color);
+}
+
+.step-card h3 {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.step-card p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* ========Mediaqueries 768px Tablets======= */
+@media (max-width: 768px) {
+
+    /* Aqui mientras se cumpla que el Width sea <= 768px */
+    body {
+        
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    /* ========Navegacion======= */
+    .main-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 999;
+        background-color: var(--background-color-light);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .main-menu li {
+        padding: 15px 0;
+        width: 100%;
+        border-bottom: 1px solid #F0F0F0;
+    }
+    .main-menu .btn-outline {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked ~ .main-menu {
+        display: flex;
+    }
 }
