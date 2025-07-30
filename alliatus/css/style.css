@@ -82,20 +82,13 @@ h3 span {
     color: var(--text-color-light);
 }
 
-.btn-dark:hover {
-    opacity: 0.9;
-}
-
 .btn-outline {
     border: 1px solid var(--border-color-dark);
     color: var(--text-color);
     background: transparent;
 }
 
-.btn-outline:hover {
-    background: var(--border-color-dark);
-    color: var(--text-color-light);
-}
+
 
 /* ========Nav======= */
 
@@ -349,7 +342,6 @@ h3 span {
     font-weight: 400;
     font-size: 0.9rem;
 }
-
 /* ========Mediaqueries 768px Tablets======= */
 @media (max-width: 768px) {
 
@@ -402,5 +394,57 @@ h3 span {
 
     #menu-toggle:checked ~ .main-menu {
         display: flex;
+    }
+
+    /* ========Hero======= */
+
+    .hero-content {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+    }
+
+    .hero-text p {
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+
+    .hero-buttons {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero-stat {
+        border: none;
+    }
+    .stat-bar {
+        flex-wrap: wrap;
+    }
+
+    .section-grid {
+         grid-template-columns: 1fr;
+    }
+
+}
+
+/* ========Media para Hover======= */
+@media (hover: hover) {
+    .btn-dark:hover {
+        opacity: 0.9;
+    }
+
+    .btn-outline:hover {
+        background: var(--border-color-dark);
+        color: var(--text-color-light);
     }
 }
